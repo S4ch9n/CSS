@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    background-color:mediumseagreen;
+}
+.container{
+    box-sizing: border-box;
+    margin : 300px 300px;
+}
+.heading{
+    font-size: 70px;
+}
+.para{
+    color: #000;
+    font-size: 30px;
+}
+.btn{
+    font-weight: bold;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    font-size: 40px;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 20px;
+
+}
