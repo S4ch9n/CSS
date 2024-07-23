@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+}
+.profile{
+   position: relative;
+   width : 600px;
+   height : 600px;
+   margin : 100px auto;
+   text-align: center;
+   border : 1px solid grey;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+
+}
+.cover-image{
+    width : 100%;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+.font-image{
+    width : 150px;
+    height : 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 300px;
+    right : 200px;
+    border : 5px solid white
+}
+.heading{
+    position: relative;
+    top : 80px;
+    font-size: 45px;
+}
+.text{
+    color: grey;
+    font-size: 35px;
+}

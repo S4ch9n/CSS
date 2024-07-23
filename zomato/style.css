@@ -1,0 +1,67 @@
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    height : 100vh;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0 ;
+}
+/* .container{
+    wid
+} */
+.zomato-back-img{
+    width: 100vw;
+    height : 100vh;
+}
+.container{
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wrapper{
+    position: absolute;
+    color: #fff;
+    /* font-size: 50px; */
+}
+.zomato-heading{
+    font-family: Montserrat
+    ;
+    font-size: 200px;
+    margin: 0;
+}
+.bottom-heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    
+}
+.input-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.location-field{
+    width : 500px;
+    padding:15px;
+    font-size: 20px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.search-field{
+    width : 600px;
+    padding:15px;
+    font-size: 21px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+input::placeholder{
+    margin: 50px;
+}
