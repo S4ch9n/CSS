@@ -42,7 +42,7 @@ body {
     left : 1px;
     background-color: dodgerblue ;
     color: #f8f8f8;
-    width : 300px;
+    width : 400px;
 }
 .right-bottom-text{
     right : 30px ;
@@ -65,4 +65,16 @@ body {
 .bottom{
     color: grey;
     font-size: 30px;
+}
+.bottom-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-left-img{
+    width : 100px;
+    height:50px;
+}
+.bottom {
+    width : 500px;
 }
