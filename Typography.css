@@ -1,0 +1,40 @@
+body{
+  padding: 10%;
+  font-size: 2rem; 
+}
+/* input , button {
+  font : inherit;
+} */
+
+.one{
+  text-indent: 2em;
+  text-decoration: overline;
+  text-transform: capitalize;
+  text-align: left;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.two{
+  text-indent: 2.5em;
+  text-decoration: underline;
+  text-transform: lowercase;
+  text-align: center;
+  word-spacing: 1em;
+  font-weight: 700;
+  font-style: oblique;
+  font-family: sans-serif;
+}
+
+.third{
+  text-indent: 8em;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 2em;
+  font-weight: 900;
+  font-style:normal;
+  font-family: 'Courier New', Courier, monospace;
+}
