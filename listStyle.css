@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  padding: 10%;
+  font-size: 2rem ;
+  font-family: "Roboto", serif;
+}
+ol{
+  /* list-style-type: disc; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: upper-roman; */
+  list-style-type:decimal;
+}
+/* li{
+  color:brown;
+} */
+ ol li{
+  color : paleturquoise;
+ }
+/* ul{
+  list-style-type : square;
+  text-align : center;
+  list-style-position: inside ;
+  color : blue;
+  line-height: 1.5;
+  /* list-style-image: url(reddot.webp); 
+}
+ */
+
+ul li {
+  /* background-image: url(reddot.webp); */
+  background-size: 20px 20px; /* Set width and height */
+  background-repeat: no-repeat;
+  background-position: left center; /* Align image */
+  padding-left: 30px; /* Add space for the image */
+}
+/* ul li:nth-child(2){
+  color : red;
+} */
+ul li:nth-child(odd){
+  color : red;
+}
+ul ::marker{
+  color : brown;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  content :"only 5>>"
+}
