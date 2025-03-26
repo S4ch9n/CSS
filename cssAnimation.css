@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* Importing the "Nunito" font from Google Fonts for use throughout the document. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Resetting margin and padding for all elements to ensure consistent styling.
+   Setting box-sizing to "border-box" so padding and borders are included in element dimensions. */
+
+html {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+/* Setting the base font size and applying the "Nunito" font to the entire document. */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+/* Ensuring the body takes up at least the full height of the viewport.
+   Using flexbox for layout with a column direction and no wrapping of children elements. */
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+/* Making the main element flexible to grow and fill available space in the body.
+   Centering its children both horizontally and vertically with a gap of 1rem between them. */
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+}
+/* Styling all divs to have equal width and height, a black border, 
+   and centering their content using CSS Grid. */
+
+div:first-child {
+  background-color: dodgerblue;
+  /* Styles for the first div. Uncomment transformations to apply effects:
+     - `translateX`: Moves the element horizontally.
+     - `rotateX`: Rotates the element around its horizontal axis.
+     - `scaleX`: Stretches or shrinks the element horizontally.
+     - `skewX`: Tilts the element horizontally. */
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+  /* Styles for the second div. Uncomment transformations to apply effects:
+     - `translateY`: Moves the element vertically.
+     - `rotateY`: Rotates the element around its vertical axis.
+     - `scaleY`: Stretches or shrinks the element vertically.
+     - `skewY`: Tilts the element vertically. */
+}
+
+div:last-child {
+  background-color: limegreen;
+  /* Styles for the last div. Uncomment transformations to apply effects:
+     - `translate`: Moves the element horizontally and vertically.
+     - `rotate`: Rotates the element by a specified degree.
+     - `scale`: Scales the element in both horizontal and vertical directions.
+     - `skew`: Tilts the element both horizontally and vertically. */
+}
+
+div:hover {
+  background-color: midnightblue;
+  /* Changes the background color when any div is hovered over. */
+  /* Uncomment the below properties to control how transitions occur:
+     - `transition-property`: Specifies which properties should transition.
+     - `transition-duration`: Duration of the transition for each property.
+     - `transition-delay`: Adds a delay before the transition starts.
+     - `transition-timing-function`: Controls the acceleration curve. */
+  transition: all 2s 0.5s;
+  /* Simplifies the transition by applying it to all properties with a duration of 2s and a delay of 0.5s. */
+}
+
+div:last-child:hover {
+  transform: rotate(180deg);
+  /* Rotates the last div 180 degrees when hovered over. */
+}
+
+.animate {
+  /* Uncomment individual animation properties to define animation behavior:
+     - `animation-name`: Specifies the animation to use (e.g., "slide").
+     - `animation-duration`: Duration of the animation.
+     - `animation-timing-function`: Specifies the acceleration curve.
+     - `animation-delay`: Adds a delay before the animation starts.
+     - `animation-iteration-count`: Number of times the animation runs.
+     - `animation-direction`: Specifies the direction of the animation (e.g., reverse).
+     - `animation-fill-mode`: Specifies how the animation applies styles before/after execution. */
+  animation: 5s ease-in-out 1s 2 normal forwards slide;
+  /* Combines all animation properties into shorthand for the "slide" animation:
+     - Duration: 5s
+     - Timing function: ease-in-out
+     - Delay: 1s
+     - Iteration count: 2
+     - Direction: normal
+     - Fill mode: forwards (applies styles at the end of the animation). */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  /* Starting state: No horizontal translation. */
+
+  33% {
+    transform: translateX(300px) rotate(180deg);
+  }
+  /* Moves the element 300px to the right and rotates it 180 degrees. */
+
+  66% {
+    transform: translateX(-300px) rotate(-180deg);
+  }
+  /* Moves the element 300px to the left and rotates it -180 degrees. */
+
+  100% {
+    transform: translateX(0);
+    background-color: rebeccapurple;
+  }
+  /* Final state: Returns to original position and changes background color to purple. */
+}
