@@ -1,35 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*,
-*::after,
-*::before{
-  box-sizing: border-box;
-  margin:0;
-  padding: 0;
+*{
+  margin : 0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container {
+  background-color: #e5e5fd;
+  min-height : 100vh;
+  border:10px solid #1d1e4c;
 }
 
-html{
-  font-size : 62%;
+.content{
+  max-width: 900px;
+  margin:0 auto;
 }
-body{
-font-family: 'Poppins',sans-serif;
+.image-container{
+  border-radius: 50%;
+  overflow: hidden;
 }
-
-/* >>>>>>>> utility classes <<<<<<<<< */
-.container{
-  max-width : 1200px;
-  width : 90%;
-  margin: auto;
+.image-container,img{
+  width: 300px;
+  height:300px;
 }
-
-
-/* >>>>>>>>>> navbar styling <<<<<<<<<<<<  */
-/* for desktop mode  */
-.navbar input[type='checkbox'],
-.navbar .hamburger-lines{
-  display: none;
+.top-section{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-
-.navbar{
-  box-shadow: 0px 5px 10px 0px #aaa;
+.top-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color : #1d1e4c;
+  text-transform: uppercase;
+}
+.top-section h4{
+  font-size: 20px;
+  text-align:end;
+}
+.about-section{
+  margin-top:50px;
+}
+.about-section h2{
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.about-section p{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  text-align: justify;
+}
+.bio-section{
+  margin:50px 0;
+}
+.bio-section h3{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.bio-section ul {
+  margin-left: 50px;
+}
+.bio-section li {
+  margin-bottom: 20px;
+}
+footer{
+  margin-top: 50px 0;
+  text-align: end;
 }
